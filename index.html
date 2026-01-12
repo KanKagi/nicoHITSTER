@@ -16,11 +16,12 @@
     </section>
 
     <section id="layout-scan" class="screen" style="display:none;">
-        <video id="camera-preview" autoplay playsinline></video>
-        <div class="qr-overlay">
+    <video id="camera-preview" autoplay playsinline muted></video>
+    
+        <div class="qr-overlay-container">
             <div class="qr-guide-frame"></div>
+            <p class="scan-guide">カードをスキャンしてください</p>
         </div>
-        <p class="scan-guide">カードをスキャンしてください</p>
     </section>
 
     <section id="layout-flip-wait" class="screen" style="display:none;">
@@ -51,4 +52,5 @@
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
