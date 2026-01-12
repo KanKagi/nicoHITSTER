@@ -6,6 +6,8 @@
     <title>NicoNico HITSTER</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
     <div id="global-bg"></div>
@@ -16,8 +18,7 @@
     </section>
 
     <section id="layout-scan" class="screen" style="display:none;">
-    <video id="camera-preview" autoplay playsinline muted></video>
-    
+        <video id="camera-preview" autoplay playsinline muted></video>
         <div class="qr-overlay-container">
             <div class="qr-guide-frame"></div>
             <p class="scan-guide">カードをスキャンしてください</p>
@@ -35,7 +36,9 @@
         <div class="play-overlay"></div>
         
         <div class="play-container">
-            <div id="youtube-player"></div>
+            <div id="youtube-player-container">
+                <div id="youtube-player"></div>
+            </div>
             
             <div class="music-info-card">
                 <h2 id="txt-song-title">Song Title</h2>
@@ -52,5 +55,4 @@
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
