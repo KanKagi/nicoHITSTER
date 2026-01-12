@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NicoNico HITSTER</title>
+    <title>nico HITSTER</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,26 +27,25 @@
 
     <section id="layout-flip-wait" class="screen" style="display:none;">
         <h2 class="neon-text">SCAN SUCCESS</h2>
-        <p class="instruction">スマホを伏せてください</p>
-        <div class="loading-spinner"></div>
+        <div class="flip-animation-container">
+            <div class="phone-icon"></div>
+        </div>
+        <p class="instruction">スマホを裏返してください</p>
     </section>
 
     <section id="layout-play" class="screen" style="display:none;">
         <div id="mv-blur-bg"></div>
         <div class="play-overlay"></div>
-        
         <div class="play-container">
             <div class="player-wrapper">
                 <div id="youtube-player"></div>
             </div>
-            
             <div class="music-info-card">
                 <h2 id="txt-song-title">Song Title</h2>
                 <p id="txt-artist-info">Artist Name</p>
                 <div class="divider"></div>
                 <div id="txt-release-year">20XX</div>
             </div>
-            
             <button id="btn-next-song" class="btn-secondary">NEXT CARD</button>
         </div>
     </section>
@@ -56,4 +55,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
