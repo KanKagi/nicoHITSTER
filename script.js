@@ -121,7 +121,7 @@ function showScreen(id) {
     document.getElementById(id).style.display = 'flex';
 }
 
-document.getElementById('btn-start_game').addEventListener('click', () => {
+document.getElementById('btn-start-game').addEventListener('click', () => {
     requestSensorPermission();
     currentState = 'SCANNING';
     showScreen('layout-scan');
@@ -137,3 +137,4 @@ document.getElementById('btn-next-song').addEventListener('click', () => {
     showScreen('layout-scan');
     startScanner();
 });
+
