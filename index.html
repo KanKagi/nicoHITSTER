@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NicoNico HITSTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="global-bg"></div>
+
+    <section id="layout-start" class="screen">
+        <h1 class="logo-text">nico<br>HITSTER</h1>
+        <button id="btn-start-game" class="btn-primary">GAME START</button>
+    </section>
+
+    <section id="layout-scan" class="screen" style="display:none;">
+        <video id="camera-preview" autoplay playsinline></video>
+        <div class="qr-overlay">
+            <div class="qr-guide-frame"></div>
+        </div>
+        <p class="scan-guide">カードをスキャンしてください</p>
+    </section>
+
+    <section id="layout-flip-wait" class="screen" style="display:none;">
+        <h2 class="neon-text">SCAN SUCCESS</h2>
+        <p class="instruction">スマホを伏せてください</p>
+        <div class="loading-spinner"></div>
+    </section>
+
+    <section id="layout-play" class="screen" style="display:none;">
+        <div id="mv-blur-bg"></div>
+        <div class="play-overlay"></div>
+        
+        <div class="play-container">
+            <div id="youtube-player"></div>
+            
+            <div class="music-info-card">
+                <h2 id="txt-song-title">Song Title</h2>
+                <p id="txt-artist-info">Artist Name</p>
+                <div class="divider"></div>
+                <div id="txt-release-year">20XX</div>
+            </div>
+            
+            <button id="btn-next-song" class="btn-secondary">NEXT CARD</button>
+        </div>
+    </section>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
